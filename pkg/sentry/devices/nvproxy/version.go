@@ -1184,6 +1184,7 @@ func Init() {
 		v590_48_01 := addDriverABI(590, 48, 01, "b9e2f80693781431cc87f4cd29109e133dcecb50a50d6b68d4b3bf2d696bd689", "14ecfb7faa56d4d18cd9fef891b3fa2db3628f12a3e59b59d3c6e6d1a0befd80", v590_44_01)
 
 		v595_71_05 := addUnsupportedDriverABI(595, 71, 05, v590_48_01)
+		_ = addDriverABI(595, 91, 07, "ce67cd27d2a0f85699883adc29f9941c7946022245f7b75a1cb643d5ce5a1bc9", "afa353f1620604b2e20c397cd3fa28496dedeb0fd971919475de5820aeefdbd4", v595_71_05)
 
 		v610_43_02 := addUnsupportedDriverABI(610, 43, 02, func() *driverABI {
 			abi := v595_71_05()
